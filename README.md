@@ -17,7 +17,7 @@ Applications of Booth’s Multiplier
 
 ## Block Diagram 
 
-![Circuit_crop](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/def99784-b204-440e-b602-2637a2249183)<br>As shown in the Block Diagram, Q and M are 4-bit registers that stores the multiplier and multipliicand respectively. It also consist of a 4-bit arthematic unit capable of performing both addition and subtractions. A MOD-4 counter is also present in order to keep track of shifting operation. A and Q are 4-bit shift register. The product is produced in 8_bit register P.<br>
+![Circuit_crop](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/def99784-b204-440e-b602-2637a2249183)<br>As shown in the Block Diagram, Q and M are 4-bit registers that stores the multiplier and multiplicand respectively. It also consist of a 4-bit arthematic unit capable of performing both addition and subtractions. A MOD-4 counter is also present in order to keep track of shifting operation. A and Q are 4-bit shift register. The product is produced in 8_bit register P.<br>
 ## Working
 The multiplication operation through Booth’s algorithm is efficient compared to traditional shift and multiplication process because it produces the result with lesser addition operation.
 
