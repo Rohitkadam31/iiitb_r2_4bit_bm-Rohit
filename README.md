@@ -116,8 +116,8 @@ The synthesis in the OpenLane flow is carried out by yosys.
          yosys> dfflibmap -liberty ../iiitb_r2_4bit_bm/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
          yosys> abc -liberty ../iiitb_r2_4bit_bm/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
          yosys>show
-  
-  * cells invoked :
+
+ * cells invoked :
       
 ![1 (1)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/1489c3e3-671c-48ce-b587-b69888e5e8ac)
 
