@@ -26,6 +26,23 @@ The multiplication operation through Booth’s algorithm is efficient compared t
 The above figure shows the flowchart of Booth’s Algorithm. At every clock cycle the two bits (Q0 , Q-1) are inspected for determination of operation .The Q0 refers to Q[0]. If the (Q0 , Q-1) are same (1,1) 0r (0,0) then only right shift operation is performed. If the (Q0 , Q-1) are same (1,0) then subtraction (A-M) followed by right shift is performed. If the (Q0 , Q-1) are same (0,1) then addition (A+M) followed by right shift operation is performed. This cycle is repeated as many times as the specified bits of Booth’s Multiplier is given. This selectivity in performing addition /subtraction operation enables it to produce result efficiently.
 
 
+## Synthesis :
+
+The synthesis in the OpenLane flow is carried out by # yosys.
+
+* process to synthesis iiitb_r2_4bit_bm on yosys :
+
+         rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ yosys
+         yosys> read_verilog iiitb_r2_4bit_bm.v
+         yosys> synth -top iiitb_r2_4bit_bm
+         yosys> dfflibmap -liberty ../iiitb_r2_4bit_bm/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+         yosys> abc -liberty ../iiitb_r2_4bit_bm/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+         yosys>show
+  
+  * cells invoked :
+      
+![1 (1)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/1489c3e3-671c-48ce-b587-b69888e5e8ac)
+
 
 
 
