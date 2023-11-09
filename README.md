@@ -165,6 +165,8 @@ The synthesis in the OpenLane flow is carried out by yosys.
 // copy that vcd file and give it to gtkwave for simulation
           
 	  rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ gtkwave design.vcd
+   
+ we get Gate level simulation 
 
 ![3 (2)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/4195fa2f-48e8-4ef9-b2b1-2fe31932e04c)
 
