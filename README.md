@@ -136,9 +136,9 @@ The synthesis in the OpenLane flow is carried out by yosys.
 * RTL Simulation (Pre-synthesis) :
 
        rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ iverilog iiitb_r2_4bit_bm.v iiitb_r2_4bit_bm_tb.v
-       //a.out created
+  //a.out created
        rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ ./a.out
-       //  we get vcd file
+   //  we get vcd file
   ![2 (1)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/be72276a-4e7f-4ad6-b6c5-9a9fecc9176e)
 
        rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ Gtkwave design.vcd
@@ -147,6 +147,29 @@ The synthesis in the OpenLane flow is carried out by yosys.
 
   ![2 (2)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/2ee1f4ac-2f47-4720-9e18-57ba6fcfa791)
 
+# Gate Level Simulation (GLS)
+
+(post-synthesis)
+
+         rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ iverikog /home/rohit/vsdflow/iiitb_r2_4bit_bm/verilog_model/primitives.v 
+        /home/rohit/vsdflow/iiitb_r2_4bit_bm/verilog_model/sky130_fd_sc_hd.v iiitb_r2_4bit_bm.v iiitb_r2_4bit_bm_tb.v
+ //we get a.out file
+ //execute it
+ 
+	      rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ ./a.out
+
+ //we get dumpfile (vcd file) for output
+ 
+![3 (1)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/61a55b53-dbcc-4913-af10-bf8942cd2e1c)
+
+// copy that vcd file and give it to gtkwave for simulation
+          
+	  rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ gtkwave design.vcd
+
+![3 (2)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/4195fa2f-48e8-4ef9-b2b1-2fe31932e04c)
+
+We can see that GLS simulation matching to RTL simulation 
+  
 
   
   
