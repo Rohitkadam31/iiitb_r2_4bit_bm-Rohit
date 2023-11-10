@@ -31,6 +31,24 @@ https://youtube.com/shorts/Ee2VT0C-TUA?si=oTUdyXXB6IwUgPz4
 
 https://youtu.be/DIp4GqSCZho?si=V4mQl17c-KJKyJPn
 
+* RTL Simulation (Pre-synthesis) :
+
+       rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ iverilog iiitb_r2_4bit_bm.v iiitb_r2_4bit_bm_tb.v
+  //a.out created
+  
+       rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ ./a.out
+  
+   //  we get vcd file
+  
+  ![2 (1)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/be72276a-4e7f-4ad6-b6c5-9a9fecc9176e)
+
+       rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ Gtkwave design.vcd
+
+  We get RTL Simulation i.e Pre-synthesis Simulation
+
+  ![2 (2)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/2ee1f4ac-2f47-4720-9e18-57ba6fcfa791)
+
+
 
 
 ## Synthesis :
@@ -133,19 +151,6 @@ The synthesis in the OpenLane flow is carried out by yosys.
   
 ![1 (2)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/6e4fb193-df5f-4b0c-be2c-cd456e2082d1)
 
-* RTL Simulation (Pre-synthesis) :
-
-       rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ iverilog iiitb_r2_4bit_bm.v iiitb_r2_4bit_bm_tb.v
-  //a.out created
-       rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ ./a.out
-   //  we get vcd file
-  ![2 (1)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/be72276a-4e7f-4ad6-b6c5-9a9fecc9176e)
-
-       rohit@rohit-VirtualBox:~/vsdflow/verilog/iiitb_r2_4bit_bm $ Gtkwave design.vcd
-
-  We get RTL Simulation i.e Pre-synthesis Simulation
-
-  ![2 (2)](https://github.com/Rohitkadam31/iiitb_r2_4bit_bm-Rohit/assets/148602919/2ee1f4ac-2f47-4720-9e18-57ba6fcfa791)
 
 # Gate Level Simulation (GLS)
 
